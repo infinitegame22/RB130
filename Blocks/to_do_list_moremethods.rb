@@ -72,11 +72,11 @@ class TodoList
   end
 
   def to_a
-    todos
+    todos.clone
   end
 
   def done?
-    todos.all? {|item| item.done }
+    todos.all? {|item| item.done? }
   end
 
   def item_at(index)
@@ -125,15 +125,23 @@ class TodoList
     end
   end
 
+  # def to_s
+  #   puts "---- Today's Todos ----"
+  #   todos.each do |item|
+  #     if item.done?
+  #       p "[X] #{item.title}"
+  #     else
+  #       p "[ ] #{item.title}"
+  #     end
+  #   end
+  # end
+
+  # LS
+
   def to_s
-    puts "---- Today's Todos ----"
-    todos.each do |item|
-      if item.done?
-        p "[X] #{item.title}"
-      else
-        p "[ ] #{item.title}"
-      end
-    end
+    text = "---#{title}---\n"
+    text << todos.map(&:to_s).join("\n")
+    text
   end
 
   def each
@@ -151,20 +159,55 @@ class TodoList
   end
 
   def find_by_title(string)
-    todos.select do |todo|
-      string == todo.title
+    todos.find {|todo| string == todo.title }
+  end
+
+  def all_done
+    done = TodoList.new("Done")
+    done.todos = todos.select {|todo| todo.done? }
+    done
+  end
+
+  def all_not_done
+    not_done = TodoList.new("NotDone")
+    not_done.todos = todos.select {|todo| !todo.done? }
+    not_done
+  end
+
+  def mark_done(string)
+    todos.each do |todo|
+      if todo.title == string
+        return todo.done!
+      end
     end
+  end
+
+  def mark_all_done
+    todos.each { |todo| todo.done! }
+  end
+
+  def mark_all_undone
+    todos.each { |todo| todo.undone! }
   end
 end
 
 todo1 = Todo.new("Buy milk")
 todo2 = Todo.new("Clean room")
 todo3 = Todo.new("Go to gym")
+# todo4 = Todo.new("Buy milk")
 
 list = TodoList.new("Today's Todos")
 list.add(todo1)
 list.add(todo2)
 list.add(todo3)
+# list.add(todo4)
 
+# todo3.done!
+p list.mark_done("Buy milk")
+list.mark_all_done
 p list.todos
-p list.find_by_title("Buy milk")
+list.mark_all_undone
+p list.todos
+# list.all_not_done
+# list.find_by_title("Buy milk")
+# list.find_by_title("Ride bike")
