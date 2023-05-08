@@ -1,6 +1,8 @@
 require 'minitest/autorun'
 require "minitest/reporters"
 Minitest::Reporters.use!
+require 'simplecov'
+SimpleCov.start
 
 require_relative 'todolist'
 
@@ -45,5 +47,53 @@ class TodoListTest < MiniTest::Test
     todo = @list.pop
     assert_equal(@todo3, todo)
     assert_equal([@todo1, @todo2], @list.to_a)
+  end
+
+  def test_done_question
+    assert_equal(false, @list.done?)
+  end
+
+  def test_add_raise_error
+    assert_raises(TypeError) { @list.add(1) }
+    assert_raises(TypeError) { @list.add('hi') }
+  end
+
+  def test_shovel
+    new_todo = Todo.new("Walk the dog")
+    @list << new_todo
+    @todos << new_todo
+    
+    assert_equal(@todos, @list.to_a)
+  end
+
+  def test_add_alias
+    new_todo = Todo.new("Feed the cat")
+    @list.add(new_todo)
+    @todos << new_todo
+
+    assert_equal(@todos, @list.to_a)
+  end
+
+  def test_item_at
+    assert_raises(IndexError) { @list.item_at(100) }
+    assert_equal(@todo1, @list.item_at(0))
+    assert_equal(@todo2, @list.item_at(1))
+  end
+
+  def test_mark_done_at
+    assert_raises(IndexError) { @list.mark_done_at(100)}
+    @list.mark_done_at(1)
+    assert_equal(false, @todo1.done?)
+    assert_equal(true, @todo2.done?)
+    assert_equal(false, @todo3.done?)
+  end
+
+  def test_mark_undone_at
+    assert_raises(IndexError) { @list.mark_done_at(100)}
+    @todo1.done!
+    @list.mark_undone_at(1)
+    assert_equal(false, @todo1.done?)
+    assert_equal(false, @todo2.done?)
+    assert_equal(false, @todo3. done?)
   end
 end
