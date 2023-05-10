@@ -1,0 +1,244 @@
+ac-mini:Medium_1 amyandjake$ which ruby
+/usr/local/rvm/rubies/ruby-3.0.0/bin/ruby
+Mac-mini:Medium_1 amyandjake$ ruby -v
+ruby 3.0.0p0 (2020-12-25 revision 95aff21468) [x86_64-darwin21]
+Mac-mini:Medium_1 amyandjake$ rbenv versions
+bash: rbenv: command not found
+Mac-mini:Medium_1 amyandjake$ rbenv root
+bash: rbenv: command not found
+Mac-mini:Medium_1 amyandjake$ gem env
+RubyGems Environment:
+  - RUBYGEMS VERSION: 3.2.3
+  - RUBY VERSION: 3.0.0 (2020-12-25 patchlevel 0) [x86_64-darwin21]
+  - INSTALLATION DIRECTORY: /usr/local/rvm/gems/ruby-3.0.0
+  - USER INSTALLATION DIRECTORY: /Users/amyandjake/.gem/ruby/3.0.0
+  - RUBY EXECUTABLE: /usr/local/rvm/rubies/ruby-3.0.0/bin/ruby
+  - GIT EXECUTABLE: /usr/local/bin/git
+  - EXECUTABLE DIRECTORY: /usr/local/rvm/gems/ruby-3.0.0/bin
+  - SPEC CACHE DIRECTORY: /Users/amyandjake/.gem/specs
+  - SYSTEM CONFIGURATION DIRECTORY: /usr/local/rvm/rubies/ruby-3.0.0/etc
+  - RUBYGEMS PLATFORMS:
+     - ruby
+     - x86_64-darwin-21
+  - GEM PATHS:
+     - /usr/local/rvm/gems/ruby-3.0.0
+     - /usr/local/rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0
+  - GEM CONFIGURATION:
+     - :update_sources => true
+     - :verbose => true
+     - :backtrace => false
+     - :bulk_threshold => 1000
+  - REMOTE SOURCES:
+     - https://rubygems.org/
+  - SHELL PATH:
+     - /usr/local/rvm/gems/ruby-3.0.0/bin
+     - /usr/local/rvm/gems/ruby-3.0.0@global/bin
+     - /usr/local/rvm/rubies/ruby-3.0.0/bin
+     - /usr/local/bin
+     - /System/Cryptexes/App/usr/bin
+     - /usr/bin
+     - /bin
+     - /usr/sbin
+     - /sbin
+     - /Library/Apple/usr/bin
+     - /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin
+     - /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin
+     - /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
+     - /usr/local/rvm/gems/ruby-3.0.0/bin
+     - /usr/local/rvm/gems/ruby-3.0.0@global/bin
+     - /usr/local/rvm/rubies/ruby-3.0.0/bin
+     - /usr/local/rvm/bin
+Mac-mini:Medium_1 amyandjake$ brew upgrade
+Running `brew update --auto-update`...
+==> Auto-updated Homebrew!
+Updated 2 taps (homebrew/core and homebrew/cask).
+==> New Formulae
+jet               nerdfix           ssocr
+==> New Casks
+1kc-razer
+asix-ax88179
+bose-updater
+caldigit-docking-utility
+caldigit-thunderbolt-charging
+concept2-utility
+creative
+genesys-cloud
+konica-minolta-bizhub-c759-c658-c368-c287-c3851-driver
+logitune
+music-miniplayer
+music-remote
+music-widget
+obsbot-webcam
+opal
+pallotron-yubiswitch
+pololu-avr-programmer-v2
+saleae-logic
+samsung-portable-ssd-t7
+shureplus-motiv
+volta
+
+You have 18 outdated formulae installed.
+
+==> Upgrading 18 outdated packages:
+tree 1.8.0 -> 2.1.0
+libidn2 2.3.3 -> 2.3.4_1
+libksba 1.6.1 -> 1.6.3
+freetype 2.12.1 -> 2.13.0_1
+libunistring 1.0 -> 1.1
+ruby-build 20221004 -> 20230428
+libgpg-error 1.45 -> 1.47
+libnghttp2 1.50.0 -> 1.52.0
+libgcrypt 1.10.1 -> 1.10.2
+gettext 0.21 -> 0.21.1
+pcre2 10.37 -> 10.42
+unbound 1.16.3 -> 1.17.1
+guile 3.0.8_2 -> 3.0.9
+gnupg 2.3.7_1 -> 2.4.1
+ruby 3.1.2_1 -> 3.2.2
+git 2.32.0 -> 2.40.1
+libffi 3.4.3 -> 3.4.4
+gnutls 3.7.8 -> 3.8.0
+==> Fetching libffi
+==> Downloading https://ghcr.io/v2/homebrew/core/lib
+############################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/lib
+==> Downloading from https://pkg-containers.githubus
+############################################# 100.0%
+==> Fetching ruby
+==> Downloading https://ghcr.io/v2/homebrew/core/rub
+############################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/rub
+==> Downloading from https://pkg-containers.githubus
+############################################# 100.0%
+==> Fetching gettext
+==> Downloading https://ghcr.io/v2/homebrew/core/get
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/1c2f2c62faee672530e8e8e2695f99d26d1b606e74b289d1914dfa13c732c500--gettext-0.21.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/get
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/a6a451ad6e18b9415a6139ca5cb4ced3a8d1e40c1238f913651d8100e6427452--gettext--0.21.1.ventura.bottle.tar.gz
+==> Fetching libgpg-error
+==> Downloading https://ghcr.io/v2/homebrew/core/lib
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/98f5d26e0bbc42377eac3ea624367f84264ea91bb4ca8c4e7cc6fa402bb3d3d5--libgpg-error-1.47.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/lib
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/fe8fb42dde67c5472d9a7048cf20ecaac57866f6d6ef9f24346e6e71e86dfe8e--libgpg-error--1.47.ventura.bottle.tar.gz
+==> Fetching libksba
+==> Downloading https://ghcr.io/v2/homebrew/core/lib
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/0ccbc5ee7ef867a251483e24d3208ab1024dacdb85a71af190a2f7f2e099209e--libksba-1.6.3.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/lib
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/d28a8c59c8da44cee3632729df6c3b6556375808340552de493329e81c2ad421--libksba--1.6.3.ventura.bottle.tar.gz
+==> Fetching freetype
+==> Downloading https://ghcr.io/v2/homebrew/core/fre
+############################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/fre
+==> Downloading from https://pkg-containers.githubus
+############################################# 100.0%
+==> Fetching libunistring
+==> Downloading https://ghcr.io/v2/homebrew/core/lib
+############################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/lib
+==> Downloading from https://pkg-containers.githubus
+############################################# 100.0%
+==> Fetching ruby-build
+==> Downloading https://ghcr.io/v2/homebrew/core/rub
+############################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/rub
+==> Downloading from https://pkg-containers.githubus
+############################################# 100.0%
+==> Fetching libnghttp2
+==> Downloading https://ghcr.io/v2/homebrew/core/lib
+############################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/lib
+==> Downloading from https://pkg-containers.githubus
+############################################# 100.0%
+==> Fetching libgcrypt
+==> Downloading https://ghcr.io/v2/homebrew/core/lib
+############################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/lib
+==> Downloading from https://pkg-containers.githubus
+############################################# 100.0%
+==> Fetching pcre2
+==> Downloading https://ghcr.io/v2/homebrew/core/pcr
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/6a53794fcaabc5cc5e05b19c02ca9c4c5f2cb9a4d65a5790a6841146465b040f--pcre2-10.42.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/pcr
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/75d2907d28236833dcb172288d16fe09964b80df40aeb49b044d6007a069b846--pcre2--10.42.ventura.bottle.tar.gz
+==> Fetching unbound
+==> Downloading https://ghcr.io/v2/homebrew/core/unb
+############################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/unb
+==> Downloading from https://pkg-containers.githubus
+############################################# 100.0%
+==> Fetching guile
+==> Downloading https://ghcr.io/v2/homebrew/core/gui
+############################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/gui
+==> Downloading from https://pkg-containers.githubus
+############################################# 100.0%
+==> Fetching libidn2
+==> Downloading https://ghcr.io/v2/homebrew/core/lib
+############################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/lib
+==> Downloading from https://pkg-containers.githubus
+############################################# 100.0%
+==> Fetching gnutls
+==> Downloading https://ghcr.io/v2/homebrew/core/gnu
+############################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/gnu
+==> Downloading from https://pkg-containers.githubus
+############################################# 100.0%
+==> Fetching gnupg
+==> Downloading https://ghcr.io/v2/homebrew/core/gnu
+############################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/gnu
+==> Downloading from https://pkg-containers.githubus
+############################################# 100.0%
+==> Fetching git
+==> Downloading https://ghcr.io/v2/homebrew/core/git
+############################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/git
+==> Downloading from https://pkg-containers.githubus
+############################################# 100.0%
+==> Fetching tree
+==> Downloading https://ghcr.io/v2/homebrew/core/tre
+############################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/tre
+==> Downloading from https://pkg-containers.githubus
+############################################# 100.0%
+==> Upgrading libffi
+  3.4.3 -> 3.4.4 
+
+==> Pouring libffi--3.4.4.ventura.bottle.tar.gz
+🍺  /usr/local/Cellar/libffi/3.4.4: 17 files, 651.4KB
+==> Running `brew cleanup libffi`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+Removing: /usr/local/Cellar/libffi/3.4.3... (17 files, 644.1KB)
+==> Upgrading ruby
+  3.1.2_1 -> 3.2.2 
+
+==> Pouring ruby--3.2.2.ventura.bottle.tar.gz
+==> Caveats
+ruby is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+If you need to have ruby first in your PATH, run:
+  echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.profile
+
+For compilers to find ruby you may need to set:
+  export LDFLAGS="-L/usr/local/opt/ruby/lib"
+  export CPPFLAGS="-I/usr/local/opt/ruby/include"
+
+For pkg-config to find ruby you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
+==> Summary
+🍺  /usr/local/Cellar/ruby/3.2.2: 16,605 files, 46.3MB
+==> Running `brew cleanup ruby`...
+Removing: /usr/local/Cellar/ruby/3.1.2_1... (15,996 files, 41MB)
+==> Upgrading gettext
+  0.21 -> 0.21.1 
+
+==> Pouring gettext--0.21.1.ventura.bottle.tar.gz
+cp: utimensat: /usr/local/Cellar/gettext/.: Permission denied
+cp: chmod: /usr/local/Cellar/gettext/.: Operation not permitted
+Error: Failure while executing; `/usr/bin/env cp -pR /private/tmp/d20230509-35863-kh5uwf/gettext/. /usr/local/Cellar/gettext` exited with 1. Here's the output:
+cp: utimensat: /usr/local/Cellar/gettext/.: Permission denied
+cp: chmod: /usr/local/Cellar/gettext/.: Operation not permitted
