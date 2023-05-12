@@ -1,0 +1,23 @@
+Certainly! As an AI language model, I have a vast amount of knowledge about the Agile methodology, including the concept of a "spike". In this article, I will explain what a spike is, why it is used in Agile development, and provide some examples of how it can be implemented using Ruby.
+
+As a new student to the software engineering world, you may have heard of Agile methodology, which is a set of principles and practices used to manage and deliver software projects. Agile methodology emphasizes collaboration, flexibility, and rapid iteration to deliver high-quality software products.
+
+One of the key concepts in Agile development is the "spike". A spike is a short, time-boxed period of research or exploration aimed at answering a specific question or addressing a particular technical problem. Spikes are often used when the development team encounters a problem that they do not know how to solve, or when they need to evaluate the feasibility of a new technology or approach.
+
+Spikes are time-boxed, meaning that they have a fixed duration and are usually limited to one or two days. This is to prevent the team from spending too much time on research and losing focus on the main goal of the project. At the end of the spike, the team should have a clear understanding of the problem or question they were exploring, and be able to make an informed decision about how to proceed with the project.
+
+Now let's look at some examples of how spikes can be used in Ruby development.
+
+Example 1: Evaluating a new gem
+
+Suppose the development team needs to add a new feature to a Ruby on Rails application, and they have identified a gem that might help them accomplish this. However, they are not sure if the gem will work for their specific use case. They could use a spike to evaluate the gem and determine if it is a good fit for their needs.
+
+The team could set a time-box of one day for the spike, and use that time to install and configure the gem, write some test code to exercise the gem's functionality, and evaluate the results. At the end of the spike, the team should have a clear understanding of whether the gem will work for their use case, and be able to make an informed decision about whether to use it in the project.
+
+Example 2: Investigating a performance issue
+
+Suppose the development team is experiencing a performance issue with a Ruby application, and they are not sure what is causing the problem. They could use a spike to investigate the issue and identify the root cause.
+
+The team could set a time-box of two days for the spike, and use that time to profile the application, identify any bottlenecks or performance issues, and propose solutions for addressing the problem. At the end of the spike, the team should have a clear understanding of the performance issue and be able to make an informed decision about how to address it.
+
+In conclusion, the concept of a spike is an important tool in Agile development, and can be used to address a wide range of technical problems and questions. By setting a fixed time-box and focusing on a specific problem or question, the development team can quickly evaluate different options and make informed decisions about how to proceed with the project.

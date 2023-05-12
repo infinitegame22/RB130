@@ -1,0 +1,120 @@
+Mac-mini:RB130 amyandjake$ brew upgrade
+==> Downloading https://formulae.brew.sh/api/formula.jws.json
+####################################################################### 100.0%
+==> Upgrading 16 outdated packages:
+tree 1.8.0 -> 2.1.0
+libidn2 2.3.3 -> 2.3.4_1
+libksba 1.6.1 -> 1.6.3
+freetype 2.12.1 -> 2.13.0_1
+libunistring 1.0 -> 1.1
+ruby-build 20221004 -> 20230428
+libgpg-error 1.45 -> 1.47
+libnghttp2 1.50.0 -> 1.52.0
+libgcrypt 1.10.1 -> 1.10.2
+gettext 0.21 -> 0.21.1
+pcre2 10.37 -> 10.42
+unbound 1.16.3 -> 1.17.1
+guile 3.0.8_2 -> 3.0.9
+gnupg 2.3.7_1 -> 2.4.1
+git 2.32.0 -> 2.40.1
+gnutls 3.7.8 -> 3.8.0
+==> Fetching libunistring
+==> Downloading https://ghcr.io/v2/homebrew/core/libunistring/manifests/1.1
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/a34801f1ad5800ba51b2b3951d82a913ccf0641982f86b02df2f0aa182535055--libunistring-1.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libunistring/blobs/sha256:10d
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/0432cad02aa6194bc8e2835ef1966077243b22093f2e7ce25fc2d4f05f1da26a--libunistring--1.1.ventura.bottle.tar.gz
+==> Fetching gettext
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/manifests/0.21.1
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/1c2f2c62faee672530e8e8e2695f99d26d1b606e74b289d1914dfa13c732c500--gettext-0.21.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/blobs/sha256:fd7e4806
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/a6a451ad6e18b9415a6139ca5cb4ced3a8d1e40c1238f913651d8100e6427452--gettext--0.21.1.ventura.bottle.tar.gz
+==> Fetching libidn2
+==> Downloading https://ghcr.io/v2/homebrew/core/libidn2/manifests/2.3.4_1-1
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/03ad193177f4e7d05ee2ed19a455028cb5fbf7ea1a812d88f18f5e9e8b4a4d43--libidn2-2.3.4_1-1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libidn2/blobs/sha256:322028f5
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/c14d8e72d94ae2a6b300d0ef96e320d8f923513b2eac16a9c8099ce462485a19--libidn2--2.3.4_1.ventura.bottle.1.tar.gz
+==> Fetching libnghttp2
+==> Downloading https://ghcr.io/v2/homebrew/core/libnghttp2/manifests/1.52.0
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/0341ef8587ad7656137e5aafc5d4fc7a605928aaa0734c863f5c36bf4188b92b--libnghttp2-1.52.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libnghttp2/blobs/sha256:18ae9
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/26d34c47dabd729766f417abcf518708654fd89b9224deba2389b5c47926f662--libnghttp2--1.52.0.ventura.bottle.tar.gz
+==> Fetching unbound
+==> Downloading https://ghcr.io/v2/homebrew/core/unbound/manifests/1.17.1
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/c214ae0e6795dc6c66cd623c6198d044492059d3b9315f5f809efaaad64e9b24--unbound-1.17.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/unbound/blobs/sha256:8c863370
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/ee20144cce0e7e10cc298171ce6573590afa1ef633cc8fbe335d5a40605c5318--unbound--1.17.1.ventura.bottle.tar.gz
+==> Fetching gnutls
+==> Downloading https://ghcr.io/v2/homebrew/core/gnutls/manifests/3.8.0
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/b0ff3eb046381b54f16325d6fd394fb64f2d0fb28a675caa209f0c740d51caab--gnutls-3.8.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/gnutls/blobs/sha256:a41072e29
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/3194dee1e745b7952e5038111e183a3cde38d2924756601e6079c9592d655613--gnutls--3.8.0.ventura.bottle.tar.gz
+==> Fetching libgpg-error
+==> Downloading https://ghcr.io/v2/homebrew/core/libgpg-error/manifests/1.47
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/98f5d26e0bbc42377eac3ea624367f84264ea91bb4ca8c4e7cc6fa402bb3d3d5--libgpg-error-1.47.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libgpg-error/blobs/sha256:478
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/fe8fb42dde67c5472d9a7048cf20ecaac57866f6d6ef9f24346e6e71e86dfe8e--libgpg-error--1.47.ventura.bottle.tar.gz
+==> Fetching libksba
+==> Downloading https://ghcr.io/v2/homebrew/core/libksba/manifests/1.6.3
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/0ccbc5ee7ef867a251483e24d3208ab1024dacdb85a71af190a2f7f2e099209e--libksba-1.6.3.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libksba/blobs/sha256:1eac027c
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/d28a8c59c8da44cee3632729df6c3b6556375808340552de493329e81c2ad421--libksba--1.6.3.ventura.bottle.tar.gz
+==> Fetching freetype
+==> Downloading https://ghcr.io/v2/homebrew/core/freetype/manifests/2.13.0_1
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/1127be2d18007f6e6a5f1e6b1ff592bc551cfb228f7c4e1aef9e3670c19abc10--freetype-2.13.0_1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/freetype/blobs/sha256:264dd24
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/fb76e696c8cc6e578b0eac612e73abc2874bc2444ca60fc1c0fa509275bed28f--freetype--2.13.0_1.ventura.bottle.tar.gz
+==> Fetching ruby-build
+==> Downloading https://ghcr.io/v2/homebrew/core/ruby-build/manifests/20230428
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/441ab27e0255cf321934197a80bb9b92358d52fe0f4ee46bfa14bce7af0f47fb--ruby-build-20230428.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/ruby-build/blobs/sha256:808fe
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/6e13ebc9152a00b9f6a3c7e18d47b0e56d653c781df0fa5e34391d923cdfbb2a--ruby-build--20230428.all.bottle.tar.gz
+==> Fetching libgcrypt
+==> Downloading https://ghcr.io/v2/homebrew/core/libgcrypt/manifests/1.10.2
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/f6c7c66ce599dfcea928a8f5a22ae6133f07b79ca416e38cac9dfbef62aef6c4--libgcrypt-1.10.2.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libgcrypt/blobs/sha256:1cf13d
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/9312e008c827f25be7805886675f5139441f768d5b99002cc41704bb69b5aeb9--libgcrypt--1.10.2.ventura.bottle.tar.gz
+==> Fetching pcre2
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/manifests/10.42
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/6a53794fcaabc5cc5e05b19c02ca9c4c5f2cb9a4d65a5790a6841146465b040f--pcre2-10.42.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:7f414ed9d5
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/75d2907d28236833dcb172288d16fe09964b80df40aeb49b044d6007a069b846--pcre2--10.42.ventura.bottle.tar.gz
+==> Fetching guile
+==> Downloading https://ghcr.io/v2/homebrew/core/guile/manifests/3.0.9-1
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/56bd4c3dd2960966e455b444869db08d55cc5c63d1f5f0ea44cca49890abbfd6--guile-3.0.9-1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/guile/blobs/sha256:6d6a932770
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/fb50f7e431eb297b13954ecfd9e6d80a819a6e2b01504a5e0369a9f207149684--guile--3.0.9.ventura.bottle.1.tar.gz
+==> Fetching gnupg
+==> Downloading https://ghcr.io/v2/homebrew/core/gnupg/manifests/2.4.1
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/d81eadb53792af5da486d786281502c1176c29b769683c85d780dae0c62498af--gnupg-2.4.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/gnupg/blobs/sha256:9015b3299f
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/adb9db6dcc871fe89926873d4dbc98489d9dd8f9e711ab8b77a9d04b5fb4c0e6--gnupg--2.4.1.ventura.bottle.tar.gz
+==> Fetching git
+==> Downloading https://ghcr.io/v2/homebrew/core/git/manifests/2.40.1
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/e2abbc685d216674d3d3c7ce7f6e46c44cd9fbfcda37f8519ada71f685f9352d--git-2.40.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/git/blobs/sha256:c2ee09f58d18
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/1094f311a62281d2a12991a8ad4730d5aaa3093edeff15cb162b0ec511d77c69--git--2.40.1.ventura.bottle.tar.gz
+==> Fetching tree
+==> Downloading https://ghcr.io/v2/homebrew/core/tree/manifests/2.1.0
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/9fe7d13f463f5a726d2f0f1029013f2b012e10b5d49ea82f3b43752ed4879123--tree-2.1.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/tree/blobs/sha256:7c41f6adcaa
+Already downloaded: /Users/amyandjake/Library/Caches/Homebrew/downloads/6be89cb72c4277424d2ad297f382c2c98596381a16bf60c0b6d0d165928a85f2--tree--2.1.0.ventura.bottle.tar.gz
+==> Upgrading libunistring
+  1.0 -> 1.1 
+
+==> Pouring libunistring--1.1.ventura.bottle.tar.gz
+==> Downloading https://formulae.brew.sh/api/cask.jws.json
+#=#=#                                                                        
+🍺  /usr/local/Cellar/libunistring/1.1: 56 files, 5MB
+==> Running `brew cleanup libunistring`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+Removing: /usr/local/Cellar/libunistring/1.0... (56 files, 5MB)
+==> Upgrading gettext
+  0.21 -> 0.21.1 
+
+==> Pouring gettext--0.21.1.ventura.bottle.tar.gz
+cp: utimensat: /usr/local/Cellar/gettext/.: Permission denied
+cp: chmod: /usr/local/Cellar/gettext/.: Operation not permitted
+Error: Failure while executing; `/usr/bin/env cp -pR /private/tmp/d20230509-40388-r9qv4v/gettext/. /usr/local/Cellar/gettext` exited with 1. Here's the output:
+cp: utimensat: /usr/local/Cellar/gettext/.: Permission denied
+cp: chmod: /usr/local/Cellar/gettext/.: Operation not permittedhhh
