@@ -19,3 +19,9 @@ the behest of the user.
 # https://blog.appsignal.com/2018/09/04/ruby-magic-closures-in-ruby-blocks-procs-and-lambdas.html#
 
 # https://www.oreilly.com/library/view/the-ruby-programming/9780596516178/ch06s05.html#:~:text=Blocks%20are%20syntactic%20structures%20in,lambdas%20have%20method%2Dlike%20behavior.
+
+# https://scoutapm.com/blog/how-to-use-lambdas-in-ruby
+
+# https://scoutapm.com/blog/how-to-use-lambdas-in-ruby
+# 
+# https://denalibalser.medium.com/ruby-blocks-procs-and-lambdas-920148136dae
