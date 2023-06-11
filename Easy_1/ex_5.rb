@@ -60,8 +60,9 @@ A:
 - iterate over the elements of the array ENCRYPTED_PIONEERS
   - for each name, we need to replace the chracters with the character 13 indices away from it
     - transform each first and last name to the correct set of letters
-
-- output the name
+    - this happens by mapping over the string, skip the spaces
+      - for each character replace it with its counterpart 13 indices/characters away
+    - join the name back together with the space and print each name to the screen
 
 
 =end
@@ -86,4 +87,38 @@ ENCRYPTED_PIONEERS = ['Nqn Ybirynpr',
 'Unllvz Fybavzfxv',
 'Tregehqr Oynapu']
 
-ENCRYPTED_PIONEERS.each {|name| p name}
+# ENCRYPTED_PIONEERS.each {|name| p name}
+CAPITAL_ALPHA = ("A".."Z").to_a
+LOWER_ALPHA = ("a".."z").to_a
+
+puts (ENCRYPTED_PIONEERS.map do |name|
+  name.chars.map do |char|
+    if char.match?(/[A-Z]/)
+      current_index = CAPITAL_ALPHA.index(char)
+      CAPITAL_ALPHA[(current_index + 13) % 26]
+    elsif char.match?(/[a-z]/)
+      current_index = LOWER_ALPHA.index(char)
+      LOWER_ALPHA[(current_index + 13) % 26 ]
+    else
+      char
+    end
+  end.join
+end)
+
+#LS
+def rot13(encrypted_text)
+  encrypted_text.each_char.reduce('') |result, encrypted_char|
+    result + decipher_character(encrypted_char)
+end
+
+def decipher_character(encrypted_char)
+  case encrypted_char
+  when 'a'..'m', 'A'..'M' then (encrypted_char.ord + 13).chr
+  when 'n'..'z', 'N'..'Z' then (encrypted_char.ord - 13).chr
+  else                          encrypted_char
+  end
+end
+
+ENCRYPTED_PIONEERS.each do |encrypted_name|
+  puts rot13(encrypted_name)
+end
