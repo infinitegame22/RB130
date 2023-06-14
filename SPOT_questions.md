@@ -6,8 +6,8 @@ In Ruby, the yield keyword is used to define a block within a method. It allows 
 
 Here's an example to illustrate the usage of yield:
 
-ruby
-Copy code
+
+
 def greet
   puts "Hello!"
   yield if block_given?
